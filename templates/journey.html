@@ -1,0 +1,216 @@
+{% extends 'memories.html' %}
+{% block title %}Journey{% endblock title %}
+{% block body %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+/*body {*/
+  /*font-family: Arial;*/
+  /*padding: 20px;*/
+  /*background: #f1f1f1;*/
+/*}*/
+
+/* Header/Blog Title */
+.header {
+  padding: 40px;
+  font-size: 40px;
+  text-align: center;
+  background: dark;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.img {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body style="background-color:; header-text-align:center">
+
+
+<div class="header">
+  <h1>Explorings</h1>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>PLOCEIDAE</h2>
+      <h5>Nest of Ploceidae, Oct 22, 2022</h5>
+      <div class="w3-card-4">
+        <img src="static/img/explore6.jpg" height=250px width=1100px alt="Alps">
+        <div class="w3-container w3-center">
+          <p>Satkhira/Bangladesh</p>
+        </div>
+      </div>
+      <p>Ploceidae are a own circle of relatives of small passerine birds, a lot of which might be referred to as weavers, weaverbirds, weaver finches and bishops. Their names come from the intricately woven plant nests that birds of this own circle of relatives construct. In the maximum current classification, Proceidae is a collection that excludes a few birds which have traditionally been grouped into families.A few sparrows, however such as the monotypic subfamily Ambriospiginae. This own circle of relatives is assumed to have originated withinside the center Miocene. All Ploceidae birds are local to the Old World and stay mainly in sub-Saharan Africa, even though a few are determined withinside the tropics of Asia. Some species had been added outdoor their local range.
+
+        Howeverflies had been added in 1836 through Swedish zoologist Karl Jacob his Sandeval. Phylogenetic research imply that this own circle of rela<span id="dots">...</span><span id="more">tives is the sister of a clade containing his Viduidae and his Estrildidae. Their not unusualplace ancestor lived withinside the Middle Miocene, approximately 18 million years ago.
+        
+        Weavers are named for his or her intricately woven nests. Nest size, shape, substances used, and production strategies range through species. Materials used to construct nests encompass excellent leaf fibers, grass, and twigs. It weaves very excellent nests from bundles of fibers, however a few, just like the buffalo weaver, shape huge, disorderly rod-like nests inside their colonies, and occasionally weave round nests.African gregarious weavers. They construct residential nests in separate bottle-formed chambers with a hundred to three hundred mating pairs coming thru the burrows from below. increase. Most species nest with a slender front down.
+        
+        They sometimes cause crop damage, notably the red-billed quelea, reputed to be the world's most numerous bird.
+        
+        Ploceidae seen in Bangladesh in the last time of summer when weather getting Rainy. Ploceadae speacially seen in Bangladesh in Plum tree mostly. 
+        They make their unique nest in plum tree using rare dry straw. During summer all day they work hard to find  dry straw. Because before Raniny season they need to collect all dry straw to build their nest. If they could not bcollect dry straw during summer then all type of straw become wet in rain and they could be homeless.
+        Mostly they start collecting dry straw in summer at the last time of when farmer cutting thei newly rowing all golden Paddy Crops. This crops cutting journey  makes smile in the face of all farmers those work hard in hot summer and heavy rain to protect their crops. And also this time this journey makes easy to to build their nest by availibility of dry straw.
+        
+        Nature protects Natural and living being itselfs.Every natural being happens for living being then it returns good and sometimes bad to them. If we take care of nature it will protect us and fullfill all our demands. If we don't then that will be curse for us.
+        
+        Ploceidae's make their own nest by itself. They don't stay in others nest. And they makes it before time. They don't dependent to anyone.
+        
+        Nature and all natural living being gives us motive gives us a way to live. Nature gives food, Nature gives oxyzen, Nature gives shades in life, nature gives joy by its own beauty.  Ploceidaes gives motives how work hard when it is actual time to work. Don't waste that time. If we waste you have to suffer when we have no time to work. If we work in time you can chill out after that time. </span> 
+        <button onclick="myFunction()" id="myBtn">Read more</button>
+        <style>
+          #more {display: none;}
+          </style>
+        <script>
+        function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+        
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "inline";
+          }
+        }
+        </script>
+      </p> 
+    </div>
+    <div class="card">
+      <h2>Sunset Of Ocean</h2>
+      <h5>Cox's Bazar, Nov 21, 2022</h5>
+      <div class="w3-card-4">
+        <img src="static/img/sunset1.jpg" height=450px width=1100px alt="Alps">
+        <div class="w3-container w3-center">
+          <p>Sugandha Beach, Cox's Bazar</p>
+        </div>
+      </div>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+        
+      </p>
+    </div>
+    <div class="card">
+      <h2>Mighty Himaliyan Mountain</h2>
+      <h5>View of A High Peak, jan 01, 2021</h5>
+      <div class="w3-card-4">
+        <img src="static/img/mountain1.JPG" height=450px width=1100px alt="Alps">
+        <div class="w3-container w3-center">
+          <p>Road to Rohtang Pass</p>
+        </div>
+      </div>
+      <p>Rohtang Pass is one of India's most spectacular natural wonders. It is the gateway to the scenic Spiti Valley, home to the famous Ping Valley National Park and numerous Buddhist monasteries. The pass is inaccessible in the winter, but visitors are allowed in the summer once the necessary permits are obtained. As soon as you enter the pass you will notice a change in the landscape and will be captivated and enchanted by the rugged and pristine beauty of the area and will return.
+
+        In ancient times, this scenic pass served as a trade route connecting people living on either side of the Pir Panjar range. Today, he is one of the pinnacle of Manali tourism and attracts tourists from all over the world.
+
+        Make sure you are prepared to face the region's challenging terrain and unpredictable weather. The most precious gift is given to those who persevere.
+
+        Enchanting glaciers, bottleneck roads, sparkling rivers, majestic mountain ranges and 360-degree panoramic views await those brave enough to brave the region's challenging terrain and weather.The route from Manali to Rohtang is he one of the most scenic drives in India. Each year, hundreds of bikers brave the challenging terrain and embark on the journey of a lifetime. 
+
+        There are many myths and legends about the origin of the Rohtang Pass name. Some say the pass is named after the majestic mountain range that connects the Kullu and Lahaul valleys. And since it is the only connection point in the valley, some say that the gods themselves passed through. It is believed that a certain Gyapo Gyasar made the pass
+
+        However, the most common and believable origin story is in the name itself. Rohtang in Ladakhi means Bhoti, which means "Pile of Corpse". The pass got its name because many people died trying to cross the pass.
+        
+      </p>
+    </div>
+    <div class="card">
+      <h2>Beauty Of Himachal</h2>
+      <h5>Himachal Sight, jan 01, 2021</h5>
+      <div class="w3-card-4">
+        <img src="static/img/explore5.jpeg" height=450px width=1100px alt="Alps">
+        <div class="w3-container w3-center">
+          <p>Mall Road/Manali, Himachal Pradesh</p>
+        </div>
+      </div>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+        
+      </p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <img src="/static/img/Nj.png" alt="Nomadic's Journey" style="width:100%">
+      <p>A Journey to the Unknown End</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Some text..</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>
+
+
+
+{% endblock body %}

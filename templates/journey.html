@@ -1,4 +1,4 @@
-{% extends 'memories.html' %}
+{% extends 'base.html' %}
 {% block title %}Journey{% endblock title %}
 {% block body %}
 <!DOCTYPE html>
@@ -11,18 +11,19 @@
 }
 
 /* Add a gray background color with some padding */
-/*body {*/
-  /*font-family: Arial;*/
-  /*padding: 20px;*/
-  /*background: #f1f1f1;*/
-/*}*/
+body {
+  font-family: "Times New Roman";
+  font-size: 25px;
+  padding: 0px;*/
+  background: #f1f1f1;*/
+}
 
 /* Header/Blog Title */
 .header {
   padding: 40px;
   font-size: 40px;
   text-align: center;
-  background: dark;
+  background-color: #AFC8C8;
 }
 
 /* Create two unequal columns that floats next to each other */
@@ -48,7 +49,7 @@
 
 /* Add a card effect for articles */
 .card {
-   background-color: white;
+   background-color: ;
    padding: 20px;
    margin-top: 20px;
 }
@@ -185,9 +186,10 @@
       </p>
     </div>
   </div>
+
   <div class="rightcolumn">
     <div class="card">
-      <h2>About Me</h2>
+      <h2 style="font-color: #FFFFFF;">About Me</h2>
       <img src="/static/img/Nj.png" alt="Nomadic's Journey" style="width:100%">
       <p>A Journey to the Unknown End</p>
     </div>

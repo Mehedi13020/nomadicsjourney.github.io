@@ -1,0 +1,140 @@
+{% extends 'base.html' %}
+{% block title %}opinion{% endblock title %}
+{% block body %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opinion</title>
+</head>
+
+<body>
+  <style>
+    .article-card {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      border: 1px solid #ccc;
+      box-shadow: 0 0 5px #ccc;
+      margin-bottom: 20px;
+    }
+    
+    .article-card-image img {
+      width: 50%%;
+      height: 400px;
+      object-fit: none;
+    }
+    
+    .article-card-content {
+      padding: 20px;
+    }
+    
+    .article-card-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    
+    .article-card-excerpt {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    
+    .article-card-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+      color: #666;
+    }
+    
+    .article-card-author:before {
+      content: "By ";
+      font-weight: bold;
+    }
+    
+    .article-card-date:before {
+      content: "Posted: ";
+      font-weight: bold;
+    }
+    
+     </Style>
+  <div class="article-card">
+    <div class="article-card-image">
+      <img src="static/img/FANTASY.jpg" alt="Alts">
+    </div>
+    <div class="article-card-content">
+      <h3 class="article-card-title">Fantasy</h3>
+      <article> <p class="article-card-excerpt">In a world that often feels too busy, overwhelming, or too real, many of us find solace in fantasy worlds. <br>  From the pages of a good book to the immersive experiences of video games, imagination lets us escape<br>  reality, explore new worlds, and let our imagination run wild. In this article, <br> we'll explore why we love fantasy and why fantasy appeals to us. <br><br>
+
+        Fantasy is a genre of fiction that typically involves magic, mythical creatures, and imaginary worlds. <br>  It can take many forms, including books, movies, TV shows, and video games. Fantasy often<br>  incorporates elements of adventure, heroism, good and evil, as well as themes of friendship, <br> love and loyalty. Set in different eras and settings, from medieval Europe to futuristic space stations. <br><br>
+        There are many reasons why people love fantasy,rela<span id="dots">...</span><span id="more"> but the most common reasons are: <br><br><br>
+        
+        
+        Escapism: <br>
+        Imagination allows us to escape the stresses and pressures of everyday life. You can immerse yourself in a fantasy world where you don't have to worry about bills, jobs, or relationships... Instead, you can focus on the adventure and excitement of the story. <br><br>
+         performance: <br>
+        Fantasy stimulates our imagination and allows us to explore new worlds and ideas. You can create your own stories and characters and imagine what it would be like to live in a magical world full of dragons, wizards and unicorns. <br><br>
+        
+        Approval: <br>
+        In fantasy, heroes and heroines often overcome incredible obstacles and save the day. Read or watch these stories to find strength and inspiration to face your own challenges. <br><br>
+        
+        Solidarity: <br>
+        Fantasy fandoms are often tight-knit communities of people who share a love of the genre. These communities can provide a sense of belonging and connection, as well as opportunities to meet like-minded people and make new friends. <br><br>
+        
+        There are countless examples of fantasy in popular culture, but here are a few of the most iconic: <br><br>
+        
+        
+        The Lord of the Rings: <br>
+        J.R.R. Tolkien's epic trilogy follows a group of hobbits, elves, dwarves, and men as they journey across Middle-earth to destroy the One Ring and defeat the evil Sauron. <br><br>
+        
+        Harry Potter: <br>
+        J.K. Rowling's beloved series follows the adventures of a young wizard named Harry Potter and his friends as they attend Hogwarts School of Witchcraft and Wizardry and battle the dark wizard Voldemort. <br><br>
+        
+        Game of Thrones: <br>
+        George R.R. Martin's epic series (and its TV adaptation) is set in a medieval-inspired world and features warring factions, dragons, and a battle for the Iron Throne. <br><br>
+        
+        The Witcher: <br>
+        Andrzej Sapkowski's series (and its video game adaptation) follows Geralt of Rivia, a monster hunter in a dark and gritty fantasy world. <br><br>
+        
+        Fantasy allows us to escape reality and explore imaginary worlds full of magic, adventure and heroism. <br>  Whether you're reading books, watching movies, or playing video games, fantasy brings a sense of empowerment, <br>  imagination, and community that's hard to find in everyday life.The next time you <br> feel overwhelmed by the real world. Then why not jump into a fantasy adventure and<br>  unleash your imagination?
+        </span>
+        <button onclick="myFunction()" id="myBtn">Read more</button>
+        <style>
+          #more {display: none;}
+          </style>
+        <script>
+        function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+        
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "inline";
+          }
+        }
+        </script> 
+        </p></article>
+      <div class="article-card-meta">
+        <span class="article-card-author">By Nomadic's Journey</span>
+        <span class="article-card-date">Date</span>
+      </div>
+    </div>
+  </div>
+  
+
+</body>
+
+</html>
+
+{% endblock body %}

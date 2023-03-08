@@ -34,3 +34,6 @@ def contact(request):
 def journey(request):
     return render(request, 'journey.html')
     
+    
+def opinion(request):
+    return render(request, 'opinion.html')
